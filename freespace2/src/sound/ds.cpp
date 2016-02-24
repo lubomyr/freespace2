@@ -1490,7 +1490,7 @@ int ds_init(int use_a3d, int use_eax)
 // NOTE: A3D and EAX are unused in OpenAL
 	// changed from 22050 to 44100 so that movies don't sound like crap
 #ifdef AL_VERSION_1_1
-	const ALCchar *initStr = (ALCchar *)"\'( (sampling-rate 44100 ))";
+	const ALCchar *initStr = NULL;
 #else
 	ALCubyte *initStr = (ALCubyte *)"\'( (sampling-rate 44100 ))";
 #endif
